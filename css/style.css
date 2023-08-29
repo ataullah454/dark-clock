@@ -1,0 +1,144 @@
+/* common css start here  */
+:root{
+  --primary-color:#0f2f44;
+  --secendary-color:#8484bf;
+  --white: #ffffff;
+  --btn-color:#ffc712;
+}
+:root.dark{
+  --primary-color:#ffffff;
+  --white: #382e2e;
+  --btn-color:#ffc712;
+  background-color: black;
+}
+*{
+  padding: 0;
+  outline: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.d-block{
+  max-width: 100%;
+  display: block;
+}
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* common css end  */
+/* top bar start here  */
+#mood{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  right:10px;
+  z-index: 999999;
+}
+#mood i{
+  color: var(--primary-color);
+  font-size: 25px;
+}
+/* top bar end  */
+/* navigation bar start  */
+#navigation{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: var(--white);
+}
+#navigation .nav-bar ul li a{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-color);
+  padding: 40px 11px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 14px;
+}
+#navigation .nav-bar ul li a:hover{
+  background-color: #fff9e6;
+  color: var(--btn-color);
+}
+#navigation .nav-bar ul li i{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+  margin: 36px 10px;
+  cursor: pointer;
+}
+#navigation .nav-bar ul li i:hover{
+  border: 1px solid var(--btn-color);
+}
+/* clock start  */
+.clock {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  background-color: #ff9d9d;
+  transform: translateX(-50%) translateY(-50%);
+  color: #000000;
+  font-size: 50px;
+  letter-spacing: 7px;
+  padding: 65px 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+/* clock end  */
+
+
+
+#clockContainer {
+	position: relative;
+  align-items: center;  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: #dedede;
+}
+#hour,
+#minute,
+#second {
+	position: absolute;
+	background: black;
+	border-radius: 10px;
+	transform-origin: bottom;
+}
+
+#hour {
+	width: 20px;
+	height: 160px;
+	top: 30px;
+	left: 200px;
+	opacity: 0.8;
+}
+
+#minute {
+	width: 15px;
+	height: 160px;
+	top: 30px;
+	left: 200px;
+	opacity: 0.8;
+}
+
+#second {
+	width: 10px;
+	height: 160px;
+	top: 30px;
+	left: 200px;
+	opacity: 0.8;
+}
