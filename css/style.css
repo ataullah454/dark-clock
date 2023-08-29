@@ -109,6 +109,7 @@ a{
   height: 450px;
   border-radius: 50%;
   background-color: #dedede;
+	border: 1px solid #222;
 }
 #hour,
 #minute,
